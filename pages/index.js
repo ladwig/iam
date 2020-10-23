@@ -16,7 +16,7 @@ export default function Start() {
           <div className={styles.picture}> 
             <img src="/daniel.png" alt="my image" /> 
           </div> 
-          <Button type="main" url="google.de" title="Contact me "name="contact"/>
+          <Button type="main" url="mailto:ladwig.daniel@icloud.com" title="Contact me "name="contact"/>
           <Button type="secondary" url="google.de" title="Download CV" name="cv"/>
         </section>
       </main>
