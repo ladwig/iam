@@ -2,7 +2,6 @@
 .button {
   font-size: medium;
   display: block;
-  font-weight: li;
   height: 55px;
   text-align: center;
   position: relative;
@@ -21,7 +20,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0 10% 0 10%;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .main {
