@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Button from '../components/button'
 import styles from '../styles/Start.module.css'
 
 export default function Start() {
@@ -13,8 +14,10 @@ export default function Start() {
         <section className={styles.hero}>
           <h1 className={styles.welcome}>I'm Daniel Ladwig</h1>
           <div className={styles.picture}> 
-          <img src="/daniel.png" alt="my image" /> 
-        </div> 
+            <img src="/daniel.png" alt="my image" /> 
+          </div> 
+          <Button type="main" url="google.de" title="Contact me "name="contact"/>
+          <Button type="secondary" url="google.de" title="Download CV" name="cv"/>
         </section>
       </main>
 
