@@ -3,7 +3,7 @@
   font-size: medium;
   display: block;
   font-weight: li;
-  height: 35px;
+  height: 55px;
   text-align: center;
   position: relative;
   display: -webkit-inline-box;
@@ -20,7 +20,7 @@
   justify-content: center;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0 25px 0 25px;
+  padding: 0 10% 0 10%;
   transition: 0.4s;
 }
 
@@ -28,8 +28,7 @@
   background: #000;
   border: 1px solid #000;
   color: #fff;
-  margin-left: 100px;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .secondary {

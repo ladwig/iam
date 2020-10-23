@@ -15,3 +15,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::selection {
+  background: #ffc966; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffc966; /* Gecko Browsers */
+}

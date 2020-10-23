@@ -1,33 +1,43 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.main {
+.hero {
+  width:  auto;
+  position: fixed;
+  top: 4em;
+  left: 40%;
+  padding: 0;
+}
+
+.buttongroup {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7%;
 
 }
 
 .welcome {
-    width:  4em;
     font-size: 6.5em;
-    position: fixed;
-    top: 0.5em;
-    left: 6em;
+    margin: 0;
     background: -webkit-linear-gradient(#4200FF, #9B6BFF);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .picture img {
   position:fixed;
   width: auto;
   height: 45em;
-  left: -18em;
+  left: -10em;
   bottom: 0;
   user-drag: none; 
   user-select: none;
@@ -51,8 +61,6 @@
     bottom: 0;
   }
 }
-
-
 
 @keyframes fadein {
   from {
