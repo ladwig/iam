@@ -1,36 +1,48 @@
 
 .button {
-  font-size: small;
+  font-size: medium;
   display: block;
-  font-weight: lighter;
+  font-weight: li;
+  height: 35px;
   text-align: center;
-  line-height: 38px;
   position: relative;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  height: 25px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0 25px 0 25px;
+  transition: 0.4s;
 }
 
 .main {
-  background: #000000;
+  background: #000;
+  border: 1px solid #000;
   color: #fff;
   margin-left: 100px;
+  transition: 0.4s;
 }
 
 .secondary {
   color: #666;
   border: 1px solid #eaeaea;
+}
+
+.main:hover {
+  background: #fff;
+  color: #000;
+}
+
+.secondary:hover {
+  border: 1px solid #000;
+  color: #000;
 }
