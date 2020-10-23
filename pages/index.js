@@ -10,9 +10,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>I'm Daniel Ladwig</h1>
-        <div className={styles.picture}>
-          <img src="/daniel.png" alt="my image" />
+        <h1 className={styles.welcome}>I'm Daniel Ladwig</h1>
+        <div className={styles.picture}> 
+          <img src="/daniel.png" alt="my image" /> 
         </div> 
       </main>
 

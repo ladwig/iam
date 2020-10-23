@@ -11,18 +11,39 @@
 
 }
 
+.welcome {
+    font-size: 5em;
+    position: fixed;
+    top: 1em;
+    left: 7em;
+    background: -webkit-linear-gradient(#4200FF, #9B6BFF);
+    word-break: break-all;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 .picture img {
   position:fixed;
   width: auto;
-  height: 48em;
+  height: 45em;
   left: -18em;
   bottom: 0;
-  
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: -900;
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .picture img {
+    position:fixed;
+    width: auto;
+    height: 30em;
+    left: -18em;
+    bottom: 0;
   }
 }
