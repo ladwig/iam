@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Start.module.css'
+import styles from '../styles/Button.module.css'
 
-export default function Start() {
+export default function button() {
   return (
     <div className={styles.container}>
       <Head>
