@@ -10,10 +10,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.welcome}>I'm Daniel Ladwig</h1>
-        <div className={styles.picture}> 
+        <section className={styles.hero}>
+          <h1 className={styles.welcome}>I'm Daniel Ladwig</h1>
+          <div className={styles.picture}> 
           <img src="/daniel.png" alt="my image" /> 
         </div> 
+        </section>
       </main>
 
       <footer className={styles.footer}>
