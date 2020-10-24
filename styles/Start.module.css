@@ -2,20 +2,24 @@
 .main {
   max-width: 35vw;
   position: fixed;
-  top: 4em;
+  top: 6em;
   left: 43%;
   padding: 0;
 }
 
 .welcome {
     font-size: 8vw;
+    font-weight: 600;
     width: 35vw;
     margin: 0;
     color: #fff;
-    background: #ffc966; 
     padding: 2%;
+    background: rgb(98,49,253);
+    background: -moz-linear-gradient(162deg, rgba(98,49,253,1) 28%, rgba(0,45,228,1) 100%);
+    background: -webkit-linear-gradient(162deg, rgba(98,49,253,1) 28%, rgba(0,45,228,1) 100%);
+    background: linear-gradient(162deg, rgba(98,49,253,1) 28%, rgba(0,45,228,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6231fd",endColorstr="#002de4",GradientType=1);
 }
-
 
 .picture img {
   position:fixed;
@@ -66,9 +70,10 @@
 @media (max-width: 992px) { }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (-width: 1200px) { 
+@media (max-width: 1200px) { 
   
 }
+
 
 @keyframes fadein {
   from {

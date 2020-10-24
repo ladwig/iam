@@ -17,6 +17,7 @@ export default function Start() {
     
           <h1 className={styles.welcome}>I'm Daniel Ladwig</h1>
         <ul className={styles.menu}>
+          <li className={styles.item}><a href="#">Contact</a></li>
           <li className={styles.item}><a href="#">Code</a></li>
           <li className={styles.item}><a href="http//:linkedin.ladwig.digital" target="_blank">Experience</a></li>
           <li className={styles.item}><a href="#">Music</a></li>
