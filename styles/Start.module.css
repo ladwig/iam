@@ -3,42 +3,19 @@
   max-width: 35vw;
   position: fixed;
   top: 4em;
-  left: 40%;
+  left: 43%;
   padding: 0;
 }
-
-.hero {
-
-}
-
-.buttongroup {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-top: 7%;
-  flex-direction: row; 
-  justify-content: space-between;
-}
-
-
-.footer {
-  min-width: 35vw;
-  position: fixed;
-  bottom: 1em;
-  left: 40%;
-  padding: 0;
-}
-
 
 .welcome {
     font-size: 8vw;
     width: 35vw;
     margin: 0;
-    background: -webkit-linear-gradient(#4200FF, #9B6BFF);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
+    background: #ffc966; 
+    padding: 2%;
 }
+
 
 .picture img {
   position:fixed;
@@ -64,7 +41,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 0;
     padding: 0;
 }
 
@@ -72,6 +48,7 @@
   display: block;
   flex: 0 1 auto; /* Default */
   list-style-type: none;
+  font-size: medium;
 }
 
 
@@ -125,3 +102,4 @@
       opacity: 1;
   }
 }
+
