@@ -1,10 +1,14 @@
 
-.hero {
-  width:  auto;
+.main {
+  max-width: 35vw;
   position: fixed;
   top: 4em;
   left: 40%;
   padding: 0;
+}
+
+.hero {
+
 }
 
 .buttongroup {
@@ -14,11 +18,21 @@
   margin-top: 7%;
   flex-direction: row; 
   justify-content: space-between;
-
 }
 
+
+.footer {
+  min-width: 35vw;
+  position: fixed;
+  bottom: 1em;
+  left: 40%;
+  padding: 0;
+}
+
+
 .welcome {
-    font-size: 6.5em;
+    font-size: 8vw;
+    width: 35vw;
     margin: 0;
     background: -webkit-linear-gradient(#4200FF, #9B6BFF);
     background-clip: text;
@@ -29,8 +43,8 @@
 .picture img {
   position:fixed;
   width: auto;
-  height: 45em;
-  left: -10em;
+  height: 80vh;
+  left: -8vw;
   bottom: 0;
   user-drag: none; 
   user-select: none;
@@ -45,14 +59,38 @@
     -o-animation: fadein 4s; /* Opera */
 }
 
-@media (max-width: 600px) {
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
   .picture img {
-    position:fixed;
-    width: auto;
-    height: 30em;
-    left: -18em;
-    bottom: 0;
+    display: none;
   }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (-width: 1200px) { 
+  
 }
 
 @keyframes fadein {
