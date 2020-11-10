@@ -10,9 +10,6 @@ export default function Start() {
         <title>Daniel Ladwig</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className={styles.picture}> 
-            <img src="/daniel.png" alt="my image" /> 
-          </section> 
       <main className={styles.main}>
     
           <h1 className={styles.welcome}>I'm Daniel Ladwig</h1>

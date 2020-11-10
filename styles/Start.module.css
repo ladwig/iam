@@ -1,9 +1,9 @@
 
 .main {
   max-width: 35vw;
-  position: fixed;
-  top: 6em;
-  left: 43%;
+  margin: auto;
+  
+
   padding: 0;
   animation: fadein 4s;
   -moz-animation: fadein 4s; /* Firefox */
@@ -14,7 +14,6 @@
 .welcome {
     font-size: 8vw;
     font-weight: 600;
-    width: 35vw;
     margin: 0;
     color: #fff;
     padding: 2%;
@@ -27,8 +26,8 @@
 
 .picture img {
   position:fixed;
-  width: auto;
-  height: 80vh;
+  width: 50vw;
+  height: auto;
   left: -8vw;
   bottom: 0;
   user-drag: none; 
@@ -82,7 +81,6 @@
 @media (max-width: 1200px) { 
   
 }
-
 
 @keyframes fadein {
   from {
