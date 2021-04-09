@@ -1,0 +1,65 @@
+
+.main {
+    width: 100vw;
+    height: 100vh;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
+    background: rgb(98,49,253);
+    background: -moz-linear-gradient(162deg, rgba(98,49,253,1) 28%, rgba(0,45,228,1) 100%);
+    background: -webkit-linear-gradient(162deg, rgba(98,49,253,1) 28%, rgba(0,45,228,1) 100%);
+    background: linear-gradient(162deg, rgba(98,49,253,1) 28%, rgba(0,45,228,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6231fd",endColorstr="#002de4",GradientType=1);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 750px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+

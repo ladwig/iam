@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden; 
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: hidden;
+  font-family: pitch-sans-medium;
   background: #fbfbfb;
 }
 
@@ -22,4 +21,37 @@ a {
 }
 ::-moz-selection {
   background: #ffc966; /* Gecko Browsers */
+}
+
+
+@font-face {
+  font-family: 'GT-Alpina-Bold-Trial';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GT-Alpina-Bold-Trial'), url(/fonts/GT-Alpina-Bold-Trial.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'GT-Alpina-Condensed-Bold-Italic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GT-Alpina-Condensed-Bold-Italic'), url(/fonts/GT-Alpina-Condensed-Bold-Italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'pitch-sans-light';
+  font-style: auto;
+  font-weight: 400;
+  font-display: swap;
+  src: local('pitch-sans-light'), url(/fonts/pitch-sans-light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'pitch-sans-medium';
+  font-style: auto;
+  font-weight: 400;
+  font-display: swap;
+  src: local('pitch-sans-light'), url(/fonts/pitch-sans-medium.woff) format('woff');
 }
