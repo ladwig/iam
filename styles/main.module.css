@@ -45,7 +45,6 @@ animation: fadein 2s;
     margin: auto;
 }
 
-
 .input {
     width: 100%;
     background: transparent;
@@ -123,6 +122,13 @@ animation: fadein 2s;
     transition: border-color 0s ease-out 0.5s, width 0.30s ease-out 0.5s, height 0.30s ease-out 0.75s;
 }
 
+.footer {
+    font-size: 0.8em;
+    color: var(--light);
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+}
 
 
 

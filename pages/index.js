@@ -3,7 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import styles from '../styles/main.module.css'
 import Navigation from "../components/navigation";
 import Contact from "../components/contact";
-
+import Footer from "../components/footer"
 export default function Start() {
 
   return (
@@ -38,8 +38,9 @@ export default function Start() {
                             <div className={styles.contact}>
                                 <h2 className="">Contact me</h2>
                                 <Contact></Contact>
-
+                                <Footer></Footer>
                             </div>
+
                         </div>
 
                     </ReactFullpage.Wrapper>
