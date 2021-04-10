@@ -1,7 +1,18 @@
-import styles from '../styles/navigation.module.css'
+import styles from '../styles/main.module.css'
 
 export default function Navigation(props) {
     return (
-        <div>Test</div>
+        <div className={styles.navbar}>
+           <ul>
+               <li>
+                   <a href="http://code.ladwig.digital" rel="noreferrer" target="_blank">Code</a>
+               </li>
+               <li>
+                   <a href="http://code.ladwig.digital" rel="noreferrer" target="_blank">Code</a>
+               </li>
+           </ul>
+
+
+        </div>
     )
 }

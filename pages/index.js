@@ -22,16 +22,20 @@ export default function Start() {
             scrollOverflow={true}
             sectionsColor={["#eaeaea", "#000"]}
             render={comp =>
-                console.log("render prop change") || (
+                 (
                     <ReactFullpage.Wrapper>
                         <div className="section">
+                            <>
+                            <Navigation></Navigation>
                             <div className={styles.intro}>
-                                <h1 className={styles.title}>Hello, <br></br> I'm Daniel Lad<span className={styles.thickLetter}>w</span>ig</h1>
-                                <h4 className={styles.subtitle}>B.Sc. business informatics and passionate about the digital tomorrow </h4>
+                                <h1>Hello, <br></br> I'm Daniel Lad<span className={styles.thickLetter}>w</span>ig</h1>
+                                <h3>B.Sc. business informatics and passionate about the digital tomorrow </h3>
                             </div>
+                            </>
                         </div>
                         <div className="section">
                             <div className={styles.contact}>
+                                <h2 className={styles.h2}>Contact me</h2>
                                 <Contact></Contact>
                             </div>d
                         </div>

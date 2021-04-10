@@ -5,22 +5,84 @@ animation: fadein 2s;
   -o-animation: fadein 2s; /* Opera */
 }
 
+.navbar {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    font-size: 1.1em;
+
+}
+
+.navbar ul {
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    background: var(--secondary);
+    display: inline;
+    margin-left: 15px;
+}
+
+.navbar a:hover {
+    background: var(--dark);
+}
+
 .intro {
     margin-left: 5vw;
 }
 
-.title {
-    font-size: 6em;
-    font-family: pitch-sans-medium;
+.form {
+    width: 100%;
+    max-width: 60vw;
+    margin: auto;
 }
 
-.subtitle {
-    font-size: 1.5em;
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 1em 0 .8em;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--light);
+    outline: none;
 }
 
-.contact {
-    background: black;
+
+.mail {
+
 }
+
+.message {
+
+}
+
+.btn {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {

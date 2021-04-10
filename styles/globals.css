@@ -4,13 +4,27 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: pitch-sans-light, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: #fbfbfb;
-  color: #000;
+  --secondary: #9cfc75;
+  --light: #eaeaea;
+  --dark: #000;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+h1 {
+  font-size: 6em;
+  font-family: pitch-sans-medium;
+}
+
+h2 {
+  color: var(--light);
+  font-family: pitch-sans-medium;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 * {
@@ -18,12 +32,11 @@ a {
 }
 
 ::selection {
-  background: #9cfc75; /* WebKit/Blink Browsers */
+  background: var(--secondary); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #9cfc75; /* Gecko Browsers */
+  background: var(--secondary); /* Gecko Browsers */
 }
-
 
 @font-face {
   font-family: 'GT-Alpina-Bold-Trial';

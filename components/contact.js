@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../styles/main.module.css'
 
 export default function Contact() {
     const [status, setStatus] = useState({
@@ -59,23 +60,15 @@ export default function Contact() {
 
     return (
         <>
-            <div className="">
-
-
                 <form
                     onSubmit={handleOnSubmit}
-                    className=""
+                    className={styles.form}
+                    autocomplete="off"
                 >
-                    <h3 className="">
-                        <span className="">
-                            Contact me
-                        </span>
-                    </h3>
 
-                    <div className="">
                         <label htmlFor="email">Email</label>
                         <input
-                            className=""
+                            className={styles.input + ' ' + styles.email}
                             id="email"
                             type="email"
                             onChange={handleOnChange}
@@ -83,21 +76,21 @@ export default function Contact() {
                             placeholder="john@doe.com"
                             value={inputs.email}
                         />
-                    </div>
-                    <div className="">
+
+
                         <label htmlFor="message">Message</label>
                         <textarea
-                            className=""
+                            className={styles.input + ' ' + styles.message}
                             id="message"
                             onChange={handleOnChange}
                             required
-                            rows="10"
+                            rows="1"
                             value={inputs.message}
                             placeholder="Whats up...?"
                         />
-                    </div>
+
                     <button
-                        className=""
+                        className={styles.btn}
                         type="submit"
                         disabled={status.submitting}
                     >
@@ -118,7 +111,6 @@ export default function Contact() {
                         )}
                     </div>
                 </form>
-            </div>
         </>
     );
 }
