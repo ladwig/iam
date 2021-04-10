@@ -59,71 +59,55 @@ export default function Contact() {
 
     return (
         <>
-            <div className="relative overflow-hidden text-white mx-auto max-w-screen-xl">
+            <div className="">
 
-
-                <div
-                    className="hidden absolute z-0 bg-gray-800 opacity-50 transform lg:block"
-                    style={{
-                        height: '400px',
-                        width: '600px',
-                    }}
-                />
-
-                <div
-                    className="hidden absolute z-0 right-0 bg-gray-800 opacity-50 transform translate-y-40 lg:block"
-                    style={{
-                        height: '400px',
-                        width: '600px',
-                    }}
-                />
 
                 <form
                     onSubmit={handleOnSubmit}
-                    className="relative w-full px-4 mx-auto max-w-lg"
+                    className=""
                 >
-                    <h1 className="relative text-center font-light text-3xl leading-relaxed lg:text-5xl">
-                        <span className="uppercase font-bold tracking-10">
+                    <h3 className="">
+                        <span className="">
                             Contact me
                         </span>
-                    </h1>
+                    </h3>
 
-                    <div className="mt-10">
+                    <div className="">
                         <label htmlFor="email">Email</label>
                         <input
-                            className="block w-full p-2 bg-gray-800 border border-white focus:outline-none"
+                            className=""
                             id="email"
                             type="email"
                             onChange={handleOnChange}
                             required
-                            placeholder="your@email.com"
+                            placeholder="john@doe.com"
                             value={inputs.email}
                         />
                     </div>
-                    <div className="mt-10">
+                    <div className="">
                         <label htmlFor="message">Message</label>
                         <textarea
-                            className="block w-full p-2 bg-gray-800 border border-white focus:outline-none"
+                            className=""
                             id="message"
                             onChange={handleOnChange}
                             required
                             rows="10"
                             value={inputs.message}
-                            placeholder="Your message..."
+                            placeholder="Whats up...?"
                         />
                     </div>
                     <button
-                        className="mt-10 py-2 px-4 border-2 border-white text-white uppercase text-sm tracking-24 bg-transparent hover:bg-white hover:text-gray-900 transition duration-150 ease-in-out"
+                        className=""
                         type="submit"
                         disabled={status.submitting}
                     >
                         {!status.submitting
                             ? !status.submitted
-                                ? 'Submit'
-                                : 'Submitted'
-                            : 'Submitting...'}
+                                ? 'Send'
+                                : 'Sent'
+                            : 'Sending...'}
                     </button>
-                    <div className="mt-4">
+                    <div className="">
                         {status.info.error && (
                             <div className="error">
                                 Error: {status.info.msg}

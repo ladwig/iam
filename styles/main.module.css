@@ -1,15 +1,12 @@
 .container {
-height: 100vh;
 animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
-background: #eaeaea;
 }
 
 .intro {
-    margin-left: 10%;
-    padding-top: 10%;
+    margin-left: 5vw;
 }
 
 .title {
@@ -21,9 +18,8 @@ background: #eaeaea;
     font-size: 1.5em;
 }
 
-.thickLetter {
-
-
+.contact {
+    background: black;
 }
 
 /* Small devices (landscape phones, 576px and up) */

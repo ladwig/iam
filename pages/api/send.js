@@ -8,7 +8,7 @@ export default async function (req, res) {
     const content = {
         to: process.env.SENDGRID_MAIL,
         from: process.env.SENDGRID_MAIL,
-        subject: `New Message From - ${email}`,
+        subject: `Contact form from: ${email}`,
         text: message,
         html: `<p>${message}</p>`,
     };
