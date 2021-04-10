@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/main.module.css'
 import Navigation from "../components/navigation";
+import Contact from "../components/contact";
+
 export default function Start() {
   return (
     <div className={styles.container}>
@@ -21,7 +23,7 @@ export default function Start() {
         <h4 className={styles.subtitle}>B.Sc. business informatics and passionate about the digital tomorrow </h4>
     </div>
         <div className={styles.contact}>
-
+    <Contact></Contact>
         </div>
     </div>
   )

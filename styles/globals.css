@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+
   font-family: pitch-sans-light, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: #fbfbfb;
   color: #000;
