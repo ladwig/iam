@@ -31,15 +31,15 @@ export default function Start() {
                             <div className={styles.intro}>
                                 <h1>Hello, <br></br> I'm Daniel Lad<span className={styles.thickLetter}>w</span>ig</h1>
                                 <h3>B.Sc. business informatics and passionate about the digital tomorrow </h3>
-                                <button onClick={() => fullpage_api.moveSectionDown()}></button>
                             </div>
                             </>
                         </div>
                         <div className="section">
                             <div className={styles.contact}>
-                                <h2 className={styles.h2}>Contact me</h2>
+                                <h2 className="">Contact me</h2>
                                 <Contact></Contact>
-                            </div>d
+
+                            </div>
                         </div>
 
                     </ReactFullpage.Wrapper>
