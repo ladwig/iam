@@ -5,6 +5,7 @@ import Navigation from "../components/navigation";
 import Contact from "../components/contact";
 
 export default function Start() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -30,6 +31,7 @@ export default function Start() {
                             <div className={styles.intro}>
                                 <h1>Hello, <br></br> I'm Daniel Lad<span className={styles.thickLetter}>w</span>ig</h1>
                                 <h3>B.Sc. business informatics and passionate about the digital tomorrow </h3>
+                                <button onClick={() => fullpage_api.moveSectionDown()}></button>
                             </div>
                             </>
                         </div>
