@@ -3,7 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import styles from '../styles/main.module.css'
 import Navigation from "../components/navigation";
 import Contact from "../components/contact";
-import Footer from "../components/footer"
+
 export default function Start() {
 
   return (
@@ -14,11 +14,6 @@ export default function Start() {
         <meta name="description" content="Get to know Daniel Ladwig, student and digital native." />
       </Head>
 
-{/*      <div className={styles.background}>
-          <div className={styles.dot + ' ' + styles.one}></div>
-          <div className={styles.dot + ' ' + styles.two}></div>
-          <div className={styles.dot + ' ' + styles.three}></div>
-      </div>*/}
         <ReactFullpage
             scrollOverflow={true}
             sectionsColor={["#eaeaea", "#000"]}
@@ -35,8 +30,7 @@ export default function Start() {
                             </>
                         </div>
                         <div className={"section" + ' ' + styles.contact}>
-                                <Contact></Contact>
-                                <Footer></Footer>
+                              <> <Contact></Contact></>
                         </div>
 
                     </ReactFullpage.Wrapper>

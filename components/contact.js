@@ -85,27 +85,25 @@ export default function Contact() {
                             value={inputs.message}
                             placeholder="Whats up...?"
                         />
+                        <div className={styles.btnContainer}>
                     <button
                         className={styles.btn}
                         type="submit"
-                        disabled={status.submitting}
+                        disabled={status.submitted || status.submitting}
                     >
                         {!status.submitting
                             ? !status.submitted
                                 ? 'Contact me'
-                                : 'Contact me'
+                                : 'Thank you!'
                             : 'Sending...'}
-                    </button>
+                    </button></div>
                     <div className={styles.status}>
-                        Fehler
                         {status.info.error && (
                             <div className={styles.error}>
                                 Error: {status.info.msg}
                             </div>
                         )}
-                        {!status.info.error && status.info.msg && (
-                            <div className={styles.success}>{status.info.msg}</div>
-                        )}
+
                     </div>
                 </form>
         </>
