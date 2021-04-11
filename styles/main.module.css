@@ -42,6 +42,15 @@ animation: fadein 2s;
     margin-top: 3vh;
 }
 
+.arrowDown {
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    -webkit-animation: updown 2s infinite  alternate;
+    animation: updown 2s infinite  alternate;
+    cursor: pointer;
+}
+
 .contact {
     margin: auto;
 }
@@ -92,7 +101,6 @@ animation: fadein 2s;
 .btnContainer {
     display: flex;
     padding: 0;
-    margin: 0;
 }
 
 .btn {
@@ -141,10 +149,11 @@ animation: fadein 2s;
         top: 2%;
         left: 2%;
     }
+
     .navbar li {
-            display: block;
-            margin-bottom: 2vh;
-            transition: transform 250ms;
+        display: block;
+        margin-bottom: 2vh;
+        transition: transform 250ms;
         }
 
     .navbar li:hover {
@@ -152,12 +161,30 @@ animation: fadein 2s;
         cursor: pointer;
         transform: translateX(+15px);
     }
+
+    .arrowDown {
+        display: none;
+    }
  }
 
 @keyframes shake {
     0% { transform: rotate(4deg); }
     50% { transform: rotate(-0.9deg); }
     100% { transform: rotate(1deg); }
+}
+
+@-webkit-keyframes updown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 @keyframes fadein {

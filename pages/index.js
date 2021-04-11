@@ -3,6 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import styles from '../styles/main.module.css'
 import Navigation from "../components/navigation";
 import Contact from "../components/contact";
+import ArrowDown from "../components/arrowDown";
 
 export default function Start() {
 
@@ -27,6 +28,7 @@ export default function Start() {
                                 <h1>Hello, <br></br>I'm Daniel Ladwig</h1>
                                 <h3 className={styles.description}>B.Sc. business informatics and passionate about the digital tomorrow </h3>
                             </div>
+                                <ArrowDown></ArrowDown>
                             </>
                         </div>
                         <div className={"section" + ' ' + styles.contact}>
