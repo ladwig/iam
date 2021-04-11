@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    right: 2%;
+    top: 2vh;
+    font-size: calc(20px + (10 - 10) * ((100vw - 768px) / (1600 - 768)));
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar a {
+    background: var(--secondary);
+    padding: 0px 3px 0px 3px;
+}
+
+.navbar li:hover {
+    animation: shake 75ms infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+}
