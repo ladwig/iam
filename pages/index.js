@@ -34,13 +34,9 @@ export default function Start() {
                             </div>
                             </>
                         </div>
-                        <div className="section">
-                            <div className={styles.contact}>
-                                <h2 className="">Contact me</h2>
+                        <div className={"section" + ' ' + styles.contact}>
                                 <Contact></Contact>
                                 <Footer></Footer>
-                            </div>
-
                         </div>
 
                     </ReactFullpage.Wrapper>

@@ -63,10 +63,10 @@ export default function Contact() {
                 <form
                     onSubmit={handleOnSubmit}
                     className={styles.form}
-                    autocomplete="off"
+                    autoComplete="off"
                 >
 
-                        <label htmlFor="email">Email</label>
+
                         <input
                             className={styles.input + ' ' + styles.email}
                             id="email"
@@ -76,9 +76,6 @@ export default function Contact() {
                             placeholder="john@doe.com"
                             value={inputs.email}
                         />
-
-
-                        <label htmlFor="message">Message</label>
                         <textarea
                             className={styles.input + ' ' + styles.message}
                             id="message"
@@ -88,7 +85,6 @@ export default function Contact() {
                             value={inputs.message}
                             placeholder="Whats up...?"
                         />
-
                     <button
                         className={styles.btn}
                         type="submit"
@@ -96,18 +92,19 @@ export default function Contact() {
                     >
                         {!status.submitting
                             ? !status.submitted
-                                ? 'Send'
-                                : 'Sent'
+                                ? 'Contact me'
+                                : 'Contact me'
                             : 'Sending...'}
                     </button>
-                    <div className="">
+                    <div className={styles.status}>
+                        Fehler
                         {status.info.error && (
-                            <div className="error">
+                            <div className={styles.error}>
                                 Error: {status.info.msg}
                             </div>
                         )}
                         {!status.info.error && status.info.msg && (
-                            <div className="success">{status.info.msg}</div>
+                            <div className={styles.success}>{status.info.msg}</div>
                         )}
                     </div>
                 </form>
