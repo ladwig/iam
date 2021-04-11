@@ -27,3 +27,29 @@
     animation-timing-function: linear;
     cursor: pointer;
 }
+
+@media (max-width: 576px) {
+    .navbar {
+        top: 2%;
+        left: 2%;
+    }
+
+    .navbar li {
+        display: block;
+        margin-bottom: 2vh;
+        transition: transform 250ms;
+    }
+
+    .navbar li:hover {
+        animation: none;
+        cursor: pointer;
+        transform: translateX(+15px);
+    }
+}
+
+@keyframes shake {
+    0% { transform: rotate(4deg); }
+    50% { transform: rotate(-0.9deg); }
+    100% { transform: rotate(1deg); }
+}
+
