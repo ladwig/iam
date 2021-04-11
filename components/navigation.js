@@ -14,8 +14,6 @@ export default function Navigation(props) {
                    <a href="http://linkedin.ladwig.digital" rel="noreferrer" target="_blank">Experience</a>
                </li>
            </ul>
-
-
         </div>
     )
 }

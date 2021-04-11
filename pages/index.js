@@ -32,7 +32,7 @@ export default function Start() {
                             </>
                         </div>
                         <div className={"section" + ' ' + styles.contact}>
-                              <> <Contact></Contact></>
+                              <><Contact></Contact></>
                         </div>
 
                     </ReactFullpage.Wrapper>

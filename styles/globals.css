@@ -82,8 +82,7 @@ textarea {
 @font-face {
   font-family: 'VisueltPro-Thin';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 800;
   font-display: fallback;
-
   src: local('VisueltPro-Thin'), url(/fonts/VisueltPro-Thin.woff2) format('woff2');
 }

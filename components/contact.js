@@ -13,6 +13,18 @@ export default function Contact() {
         message: '',
     });
 
+    const [randomFact, setRandomFact] = useState({
+        facts:  [
+            "lovely",
+            "glorious",
+            "awesome",
+            "amazing",
+            "marvelous",
+            "delightful"
+        ]
+
+    })
+
     const handleResponse = (status, msg) => {
         if (status === 200) {
             setStatus({
@@ -65,8 +77,6 @@ export default function Contact() {
                     className={styles.form}
                     autoComplete="off"
                 >
-
-
                         <input
                             className={styles.input + ' ' + styles.email}
                             id="email"
@@ -83,7 +93,7 @@ export default function Contact() {
                             required
                             rows="1"
                             value={inputs.message}
-                            placeholder="Whats up...?"
+                            placeholder={'Have a ' + randomFact.facts[Math.floor(Math.random() * randomFact.facts.length)] + ' day!'}
                         />
                         <div className={styles.btnContainer}>
                     <button

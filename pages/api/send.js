@@ -15,9 +15,9 @@ export default async function (req, res) {
 
     try {
         await sgMail.send(content);
-        res.status(200).send('Message sent successfully.');
+        res.status(200).send('Message sent!');
     } catch (error) {
         console.log('ERROR', error);
-        res.status(400).send('Message not sent. Try it later or contact me via LinkedIn.');
+        res.status(400).send('Try it later or contact me via LinkedIn.');
     }
 }

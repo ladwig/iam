@@ -1,38 +1,8 @@
 .container {
-animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-}
-
-.navbar {
-    position: fixed;
-    right: 2%;
-    top: 2vh;
-    font-size: calc(20px + (10 - 10) * ((100vw - 768px) / (1600 - 768)));
-}
-
-.navbar ul {
- list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.navbar li {
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.navbar a {
-    background: var(--secondary);
-    padding: 0px 3px 0px 3px;
-}
-
-.navbar li:hover {
-    animation: shake 75ms infinite;
-    animation-timing-function: linear;
-    cursor: pointer;
+    animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 3s;
 }
 
 .intro {
@@ -40,7 +10,7 @@ animation: fadein 2s;
 }
 
 .description {
-    margin-top: 3vh;
+    margin-top: 2.5vh;
 }
 
 .arrowDown {
@@ -58,7 +28,7 @@ animation: fadein 2s;
 
 .contact ::selection {
     background: var(--light); /* WebKit/Blink Browsers */
-    color: var(--secondary);
+    color: var(--dark);
 }
 
 .contact ::-moz-selection {
@@ -88,7 +58,6 @@ animation: fadein 2s;
     }
  }
 
-
 @-webkit-keyframes updown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
@@ -111,6 +80,7 @@ animation: fadein 2s;
       opacity:1;
   }
 }
+
 @-moz-keyframes fadein { /* Firefox */
   from {
       opacity:0;
@@ -119,6 +89,7 @@ animation: fadein 2s;
       opacity:1;
   }
 }
+
 @-webkit-keyframes fadein { /* Safari and Chrome */
   from {
       opacity:0;
@@ -127,6 +98,7 @@ animation: fadein 2s;
       opacity:1;
   }
 }
+
 @-o-keyframes fadein { /* Opera */
   from {
       opacity:0;
