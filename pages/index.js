@@ -29,7 +29,7 @@ export default function Start() {
                             <>
                             <Navigation></Navigation>
                             <div className={styles.intro}>
-                                <h1>Hello, <br></br> I'm Daniel Lad<span className={styles.thickLetter}>w</span>ig</h1>
+                                <h1>Hello, <br></br>I'm Daniel Ladwig</h1>
                                 <h3>B.Sc. business informatics and passionate about the digital tomorrow </h3>
                             </div>
                             </>

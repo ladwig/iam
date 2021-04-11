@@ -73,7 +73,7 @@ export default function Contact() {
                             type="email"
                             onChange={handleOnChange}
                             required
-                            placeholder="john@doe.com"
+                            placeholder="your@mailadress.com"
                             value={inputs.email}
                         />
                         <textarea
