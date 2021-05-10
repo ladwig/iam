@@ -15,11 +15,11 @@ export default function Contact() {
 
     const [randomFact, setRandomFact] = useState({
         facts:  [
-            "glorious",
-            "awesome",
-            "amazing",
-            "marvelous",
-            "delightful"
+            "a glorious",
+            "an awesome",
+            "an amazing",
+            "a marvelous",
+            "a delightful"
         ]
 
     })
@@ -92,7 +92,7 @@ export default function Contact() {
                             required
                             rows="1"
                             value={inputs.message}
-                            placeholder={'Have an ' + randomFact.facts[Math.floor(Math.random() * randomFact.facts.length)] + ' day!'}
+                            placeholder={'Have ' + randomFact.facts[Math.floor(Math.random() * randomFact.facts.length)] + ' day!'}
                         />
                         <div className={styles.btnContainer}>
                     <button
