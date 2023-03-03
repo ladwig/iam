@@ -86,3 +86,7 @@ textarea {
   font-display: fallback;
   src: local('VisueltPro-Thin'), url(/fonts/VisueltPro-Thin.woff2) format('woff2');
 }
+
+fp-watermark {
+  display: none !important;
+}
