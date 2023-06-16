@@ -15,7 +15,7 @@ export default function Start() {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <meta name="description" content="Get to know Daniel Ladwig, student and digital native." />
+        <meta name="description" content="Get to know Daniel Ladwig digital native & product mananger." />
       </Head>
 
         <ReactFullpage
@@ -29,7 +29,7 @@ export default function Start() {
                             <Navigation></Navigation>
                             <div className={styles.intro}>
                                 <h1>Hello, <br></br>I'm Daniel Ladwig</h1>
-                                <h3 className={styles.description}>Managing digital products in the mobility sector and passionate about user-centric approaches</h3>
+                                <h3 className={styles.description}>Managing digital products @Enpal and building creative safespaces @QS1</h3>
                             </div>
                                 <ArrowDown></ArrowDown>
                             </>
